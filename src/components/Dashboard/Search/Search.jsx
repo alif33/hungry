@@ -14,7 +14,7 @@ const Search = () => {
             {/* Data */}
             <div className="flex  space-x-5 items-center flex-col sm:flex-col md:flex-row space-y-3 sm:space-y-4 md:space-y-0">
                 <div>
-                    <input type="text" className="outline-none bg-gray-200 px-2 py-1 rounded-md text-center h-10 " value={new Date().toDateString()} />
+                    <input type="text" className="outline-none bg-gray-200 px-2 py-1 rounded-md text-center h-10 " defaultValue={new Date().toDateString()} />
                 </div>
                 <div className="flex flex-row space-x-3">
                     <h3 className="flex h-10 items-center justify-center px-6 py-2 bg-blue-500 rounded-md text-white text-sm  active:scale-95  cursor-pointer transition-transform duration-150 ease-in-out text-center hover:bg-blue-600">Daily</h3>

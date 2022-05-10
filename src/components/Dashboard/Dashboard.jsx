@@ -5,6 +5,7 @@ import ChartOne from './Chart/ChartOne'
 import Search from './Search/Search'
 import ChartTwo from './Chart/ChartTwo';
 import { ChartThree } from './Chart/ChartThree'
+import Table from './Table/Table'
 
 const Dashboard = () => {
     return (
@@ -23,7 +24,8 @@ const Dashboard = () => {
                     {/* <ChartTwo /> */}
                     <ChartThree />
                 </div>
-                {/* </div> */}
+                {/* table */}
+                <Table />
             </main>
         </>
     )

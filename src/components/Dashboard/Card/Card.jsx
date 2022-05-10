@@ -5,7 +5,7 @@ import { StarIcon } from '@heroicons/react/solid'
 
 const Card = () => {
     return (
-        <div className='max-w-5xl mx-auto p-3'>
+        <div className='max-w-5xl mx-auto p-3 my-5'>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto  gap-5'>
                 <SingleCard number={100} title={"Comment"} Icon={<ChatAlt2Icon className='h-16 md:h-12 text-yellow-500' />} />
                 <SingleCard number={"21.11%"} title={"Positive Rate"} Icon={<PresentationChartBarIcon className='h-16 md:h-12 text-green-500' />} />
