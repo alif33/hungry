@@ -1,13 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "./components/Login/Login";
-import Dashboard from "./components/Dashboard/Dashboard";
+import Dashboard from "./Pages/Dashboard";
+import Index from "./Pages/Index";
+import Login from "./Pages/Login";
 
 const App = () => {
   return (
     <>
       <div className="max-w-7xl mx-auto overflow-x-hidden">
         <Routes>
+          <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="dashboard">
             <Route index element={<Dashboard />} />

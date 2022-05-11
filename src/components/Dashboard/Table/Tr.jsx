@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const Tr = (props) => {
     const { sno, sentiment, date, keywords } = props.data
     return (
-        <tr  >
+        <tr>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                 <p className="text-gray-900 whitespace-no-wrap">{sno}</p>
             </td>
@@ -20,7 +20,6 @@ const Tr = (props) => {
                     {keywords}
                 </p>
             </td>
-
         </tr>
     )
 }

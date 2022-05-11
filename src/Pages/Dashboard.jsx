@@ -1,13 +1,16 @@
 import React from 'react'
-import Header from '../Header/Header'
-import Card from './Card/Card'
-import ChartOne from './Chart/ChartOne'
-import Search from './Search/Search'
-import ChartTwo from './Chart/ChartTwo';
-import { ChartThree } from './Chart/ChartThree'
-import Table from './Table/Table'
-import Dissappointment from './Disappointment/Dissappointment'
-import { Satisfaction } from './Satisfaction/Satisfaction'
+import Header from '../components/Header/Header'
+import Card from '../components/Dashboard/Card/Card'
+import ChartOne from '../components/Dashboard/Chart/ChartOne'
+import Search from '../components/Dashboard/Search/Search'
+import ChartTwo from '../components/Dashboard/Chart/ChartTwo';
+import { ChartThree } from '../components/Dashboard/Chart/ChartThree'
+import Table from '../components/Dashboard/Table/Table'
+import Dissappointment from '../components/Dashboard/Disappointment/Dissappointment'
+import { Satisfaction } from '../components/Dashboard/Satisfaction/Satisfaction'
+import Issu from '../components/Dashboard/Issu/Issu'
+import PopularKey from '../components/Dashboard/Popular-Key/PopularKey'
+import Footer from '../components/Footer/Footer'
 
 const Dashboard = () => {
     return (
@@ -32,6 +35,9 @@ const Dashboard = () => {
                 <hr className='shadow ' />
 
                 {/* Popular keyword */}
+                <PopularKey />
+                <hr className='shadow ' />
+
                 {/* disappointment product*/}
                 <Dissappointment />
                 <hr className='shadow ' />
@@ -39,8 +45,11 @@ const Dashboard = () => {
                 {/* atisfaction per product */}
                 <Satisfaction />
                 <hr className='shadow ' />
+                {/* Issu */}
+                <Issu />
 
             </main>
+            <Footer />
         </>
     )
 }

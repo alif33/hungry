@@ -1,19 +1,22 @@
 import Tr from './Tr'
 import { CommentTableApi } from './../../../Apis/FackTable';
-
+import { useState } from 'react'
 const TBody = () => {
+    const [Data, setData] = useState(CommentTableApi)
     return (
-        <tbody>
+        <tbody className='overflow-hidden h-12'>
             {
-                CommentTableApi.map((tr, index) => {
+                Data && Data.map((tr, index) => {
                     return (
                         <Tr data={tr} key={index} />
                     )
                 })
             }
-
         </tbody>
     )
 }
+
+
+
 
 export default TBody

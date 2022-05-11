@@ -3,7 +3,7 @@ import Items from './../Disappointment/Items';
 
 export const Satisfaction = () => {
     return (
-        <div className='max-w-4xl mx-auto mt-10 mb-5'>
+        <div className='max-w-5xl mx-auto mt-10 mb-5'>
             <div className='flex justify-between flex-col md:flex-row lg:flex-row space-y-5 md:space-y-0 lg:space-y-0 px-5 md:space-x-5 '>
                 <LeftSide title="Products you customers like " src={'/image/improve.png'} />
 

@@ -44,36 +44,70 @@ const data = [
         pv: 4300,
         amt: 2100,
     },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
 ];
 
 const ChartTwo = () => {
 
 
     return (
-        <div className='' >
-            <ResponsiveContainer width={700} height={300}>
-                <BarChart
-                    width={750}
-                    height={300}
-                    className='mt-5 w-full'
-                    data={data}
-                    margin={{
-                        top: 20,
-                        right: 30,
-                        left: 20,
-                        bottom: 5,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis yAxisId="left" orientation="left" stroke="#8884d8" />
-                    <YAxis yAxisId="right" orientation="right" stroke="#82ca9d" />
-                    <Tooltip />
-                    <Legend />
-                    <Bar yAxisId="left" dataKey="pv" fill="#8884d8" />
-                    <Bar yAxisId="right" dataKey="uv" fill="#82ca9d" />
-                </BarChart>
-            </ResponsiveContainer>
+        <div className='overflow-y-auto' >
+            <BarChart
+                width={750}
+                height={300}
+                className=' mx-auto'
+                data={data}
+                margin={{
+                    top: 20,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                }}
+            >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis />
+                {/* <YAxis yAxisId="left" orientation="left" stroke="#8884d8" /> */}
+                <YAxis yAxisId="right" orientation="right" stroke="#82ca9d" />
+                <Tooltip />
+                <Legend />
+                {/* <Bar yAxisId="left" dataKey="pv" fill="#8884d8" /> */}
+                <Bar yAxisId="right" dataKey="uv" fill="#82ca9d" />
+            </BarChart>
 
         </div >
     );
